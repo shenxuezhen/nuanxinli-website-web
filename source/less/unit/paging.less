@@ -1,0 +1,98 @@
+/*自定义颜色*/
+@Theme-color:#fcab55;
+@hover-color:#ee7f38;
+.nxl-paging{
+  >ul{
+    overflow: hidden;
+    list-style-type: none;
+    margin: 40px auto;
+    letter-spacing: -5px;
+    text-align: center;
+    >li{
+//    float: left;
+      display: inline-block;
+      letter-spacing: normal;
+      >a{
+        display: inline-block;
+        text-align: center;
+        font-family: inherit;
+        font-size: 0.875em;
+        color: #282828;
+        padding: 0 15px;
+        height: 36px;
+        line-height: 36px;
+        text-decoration: none;
+        background-color: #fff;
+        border-top: 1px solid #d6d6d6;
+        border-bottom: 1px solid #d6d6d6;
+        border-left: 1px solid #d6d6d6;
+        &:visited,&:focus,&:active{
+          text-decoration: none;
+          color: #282828;
+          background-color: #fff;
+        }
+        &:hover, &.on{
+          text-decoration: none;
+          color: #fff;
+          background-color: @Theme-color;
+          border-color: @Theme-color;
+        }
+      }
+      &.prev{
+        margin-right: 8px;
+        border-right: 1px solid #d6d6d6;
+      }
+      &.next{
+        margin-left: 8px;
+        border-right: 1px solid #d6d6d6;
+      }
+      &:nth-last-of-type(2){
+        >a{
+          border-right: 1px solid #d6d6d6;
+        }
+      }
+      &:nth-last-of-type(4){
+        >a{
+          border-right: 1px solid #d6d6d6;
+        }
+      }
+      &:nth-of-type(2){
+        >a{
+          border-right: 1px solid #d6d6d6;
+        }
+      }
+    }
+    >form{
+      display: inline-block;
+      >li{
+        display: inline-block;
+        color: #999999;
+        font-size: 0.875em;
+        margin-left: 12px;
+        letter-spacing: normal;
+        >input{
+          width: 45px;
+          background: #fff;
+          font-size: 1em;
+          color: #000;
+          padding: 4px 2px;
+          margin: 0 7px;
+          border: 1px solid #d6d6d6;
+          outline: none;
+          font-family: inherit;
+          text-align: center;
+        }
+        >button{
+          width: 50px;
+          padding: 6px 0;
+          background: #fff;
+          color: #000;
+          border: 1px solid #d6d6d6;
+          font-size: 0.8571428571428571em;
+          font-family: inherit;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

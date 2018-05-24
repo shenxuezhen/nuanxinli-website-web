@@ -1,0 +1,85 @@
+/*自定义颜色*/
+@Theme-color:#fcab55;
+@hover-color:#ee7f38;
+.nxl-box{
+  >div{
+    width: 100%;
+    &.nxl-box-right{
+      width: 97%;
+      float: right;
+      margin-bottom: 11px;
+      >.title{
+        height: 35px;
+        width: 100%;
+        line-height: 35px;
+        border-left: 4px solid @Theme-color;
+        border-bottom: 1px solid @Theme-color;
+        padding-left: 7px;
+        font-weight: bold;
+        font-size: 18px;
+        color: #434a54;
+        >.small{
+          display: inline-block;
+          float: right;
+          height: 100%;
+          color: #a8b0bb;
+          font-size: 0.7em;
+          font-weight: normal;
+          padding-right: 21px;
+        }
+      }
+    }
+    &.title{
+      height: 35px;
+      width: 100%;
+      line-height: 35px;
+      border-left: 4px solid @Theme-color;
+      border-bottom: 1px solid @Theme-color;
+      padding-left: 7px;
+      font-weight: bold;
+      font-size: 18px;
+      color: #434a54;
+      >.small{
+        display: inline-block;
+        float: right;
+        height: 100%;
+        color: #a8b0bb;
+        font-size: 0.7em;
+        font-weight: normal;
+        padding-right: 21px;
+      }
+    }
+    &.body{
+      width: 100%;
+    }
+  }
+}
+
+.nxl-box-rev{
+  >div{
+    width: 100%;
+    &.title{
+      width: 100%;
+      border-top: 1px solid @Theme-color;
+      >span{
+        display: inline-block;
+        background-color: @Theme-color;
+        height: 25px;
+        line-height: 25px;
+        color: #fff;
+        font-size: 1.125em;
+        padding: 0 10px;
+      }
+    }
+    &.body{
+      width: 100%;
+    }
+  }
+}
+
+
+
+
+
+
+

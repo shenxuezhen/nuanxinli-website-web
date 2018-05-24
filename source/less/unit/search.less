@@ -1,0 +1,46 @@
+/*自定义颜色*/
+@Theme-color:#fcab55;
+@hover-color:#ee7f38;
+.nxl-search{
+  width: 99.73821989528796%;
+  border: 1px solid @Theme-color;
+  padding: 34px 0;
+  >.wrap{
+    width: 92.40837696335079%;
+    margin: auto;
+    >div{
+      height: 26px;
+      line-height: 26px;
+      font-size: 18px;
+      color: #000;
+      text-align: left;
+      margin-top: 24px;
+      &.city{
+        margin-top: 0;
+      }
+    }
+    .btn{
+      display: inline-block;
+      text-align: center;
+      font-size: 14px;
+      height: 24px;
+      line-height: 24px;
+      margin-left: 10px;
+      padding-left: 10px;
+      cursor: pointer;
+      &.selector{
+        padding-right: 32px;
+        background-image: url(../img/icon_selector.png);
+        background-position: right center;
+        background-repeat: no-repeat;
+        border: 1px solid @Theme-color;
+      }
+      &.normal{
+        padding-right: 10px;
+        &.on{
+          background-color: @Theme-color;
+        }
+      }
+    }
+  }
+}

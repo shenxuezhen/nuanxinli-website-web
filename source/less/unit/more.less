@@ -1,0 +1,55 @@
+/*自定义颜色*/
+@Theme-color:#fcab55;
+@hover-color:#ee7f38;
+.nxl-more-normal{
+  cursor: pointer;
+  width: 100%;
+  background-color: @Theme-color;
+  color: #fff;
+  text-align: center;
+  padding: 12px 0;
+  margin-top: 10px;
+  >a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    &:hover,&:active,&:visited,&:focus{
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+  >p{
+    text-align: center;
+    margin-top: 6px;
+    font-size: 0.75em;
+  }
+  &:hover{
+    background-color: #ef7e38;
+  }
+}
+.nxl-more-simple{
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  padding: 18px 0;
+  >a{
+    display: inline-block;
+    color: #434a54;
+    font-size: 1em;
+    text-decoration: none;
+    &:hover,&:active,&:visited,&:focus{
+      color: #434a54;
+      text-decoration: none;
+    }
+  }
+  >p{
+    color: #aab2bd;
+    font-size: 0.875em;
+    text-align: center;
+    margin-top: 8px;
+  }
+  &:hover{
+    background: #E8EAE1;
+  }
+}

@@ -1,0 +1,201 @@
+/*自定义颜色*/
+@Theme-color:#fcab55;
+@hover-color:#ee7f38;
+body{
+  >div{
+    &.header{
+      .container{
+        >a{
+          &.logo{
+            &.login-page{
+              width: 134px;
+            }
+          }
+        }
+      }
+    }
+    &.login-content{
+      width: 100%;
+      margin-top: 30px;
+      border-top: 4px solid @Theme-color;
+      overflow: hidden;
+      >.container{
+        width: 69.5%;
+        margin: 90px auto 170px auto;
+        >.left{
+          float: left;
+          width: 57.55395683453237%;
+          >img{
+            width: 100%;
+          }
+        }
+        >.right{
+          float: right;
+          width: 35.97122302158273%;
+          border: 2px solid #e6e9ee;
+          border-top: 2px solid @Theme-color;
+          background-color: #fff;
+          >.wrap{
+            width: 84.28571428571429%;
+            height: 320px;
+            overflow: hidden;
+            margin: 0 auto 0 auto;
+            padding-bottom: 62px;
+            letter-spacing: -0.31em;
+            >.login{
+              margin-right: 1%;
+            }
+            >div{
+              &.tab{
+                position: relative;
+                display: inline-block;
+                width: 49%;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                color: #434a54;
+                font-size: 16px;
+                border: 0;
+                border-bottom: 1px solid #e6e9ee;
+                background-color: #fff;
+                cursor: pointer;
+                letter-spacing: normal;
+                z-index: 2;
+                &.on{
+                  color: @Theme-color;
+                  border-bottom: 1px solid @Theme-color;
+                }
+              }
+              &.opt{
+                position: relative;
+                overflow: hidden;
+                >input{
+                  width: 100%;
+                  height: 42px;
+                  color: #cccccc;
+                  font-size: 14px;
+                  font-family: inherit;
+                  padding: 0px 0px 0px 61px;
+                  border: 1px solid #e6e9ee;
+                  border-radius: 5px;
+                  background-repeat: no-repeat;
+                  background-position: left center;
+                  letter-spacing: normal;
+                  outline: none;
+                  &.username{
+                    background-image: url(../img/icon_username.png);
+                  }
+                  &.pwd{
+                    background-image: url(../img/icon_pwd.png);
+                  }
+                  &.new-pwd{
+                    padding: 8px 0 8px 18px;
+                  }
+                  &.code{
+                    width: 57.6271186440678%;
+                    padding: 15px 0 15px 17px;
+                  }
+                  &.send-code{
+                    width: 32.20338983050847%;
+                    height: 34px;
+                    line-height: 34px;
+                    color: #434a54;
+                    border: 1px solid #cccccc;
+                    text-align: center;
+                    margin-left: 5.76271186440678%;
+                    padding: 0;
+                    border-radius: 9999px;
+                    background-color: transparent;
+                    cursor: pointer;
+                    &.disable{
+                      color: @Theme-color;
+                      border: 1px solid @Theme-color;
+                      cursor: default;
+                    }
+                  }
+                }
+                >p{
+                  letter-spacing: normal;
+                  &.forgot-pwd{
+                    >a{
+                      color: #434a54;
+                      font-size: 14px;
+                      padding-left: 4px;
+                      text-decoration: none;
+                      &:hover,&:visited,&:focus,&:active{
+                        text-decoration: none;
+                        color: #434a54;
+                      }
+                    }
+                  }
+                }
+                >.btn-normal-auto{
+                  height: 44px;
+                  padding: 0;
+                  background-color: @Theme-color;
+                  letter-spacing: normal;
+                }
+                &.register{
+                  top: -398px;
+                }
+                >.otherLogin {
+                  width: 100%;
+                  overflow: hidden;
+                  list-style: none;
+                  text-align: center;
+                  margin-top: 30px;
+                  padding: 0px 4%;
+                  >li{
+                    float: left;
+                  }
+                  >.lineLogin {
+                    width: 20%;
+                    height: 1px;
+                    background: #E8E8EA;
+                    margin:10px 8%;
+                  }
+                  >.threeLogin{
+                    width: 25%;
+                    margin-left: -2.5%;
+                    letter-spacing:0px;
+                  }
+                }
+                >.loginThree{
+                  width: 100%;
+                  overflow: hidden;
+                  list-style: none;
+                  padding: 0px 8%;
+                  >li{
+                    float: left;
+                    width: 32px;
+                    margin:0px 10%;
+                    height:32px;
+                    cursor: pointer;
+                  }
+                  >.weixinLogin{
+                    background-image: url(../img/icon_share_wx.png);
+                  }
+                  >.QQLogin{
+                    background-image: url(../img/icon_share_qq.png);
+                    overflow: hidden;
+                    >a{
+                      float: left;
+                      width: 32px;
+                      height: 32px;
+                      >img{
+                        display: none;
+                      }
+                    }
+                  }
+                  >.weiboLogin{
+                    background-image: url(../img/icon_share_wb.png);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

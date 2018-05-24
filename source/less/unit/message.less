@@ -1,0 +1,166 @@
+/*自定义颜色*/
+@Theme-color:#fcab55;
+@hover-color:#ee7f38;
+.transition(@options){
+  transition: @options;
+  -webkit-transition: @options;
+  -moz-transition: @options;
+  -o-transition: @options;
+}
+.transform(@options){
+  transform: @options;
+  -webkit-transform: @options;
+  -moz-transform: @options;
+  -o-transform: @options;
+  -ms-transform: @options;
+}
+
+.nxl-message{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(6, 1, 0, .47);
+  overflow-x: hidden;
+  overflow-y: auto;
+  opacity: 0;
+  .transition(opacity .15s linear);
+  >.content{
+    width: 56.42857142857143%;
+    margin: 100px auto 0 auto;
+    border-radius: 6px;
+    overflow: hidden;
+    .transform(translate(0,-25%));
+    .transition(transform .3s ease-out);
+    >.title{
+      background-color: @Theme-color;
+      color: #fff;
+      font-size: 1.25em;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 0 0 37px;
+      >.close{
+        display: inline-block;
+        float: right;
+        background-image: url(../img/icon_message_close.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 20px;
+        height: 18px;
+        margin: 11px 15px 0 0;
+        cursor: pointer;
+      }
+    }
+    >.body{
+      background-color: #fff;
+      overflow: hidden;
+      >.wrap{
+        width: 89.87341772151899%;
+        margin: 30px auto 40px auto;
+        text-align: center;
+        >table{
+          width: 100%;
+          >tbody{
+            >tr{
+              >td{
+                color: #434a54;
+                font-size: 1.25em;
+                text-align: left;
+                vertical-align: middle;
+                &.w20{
+                  width: 20%;
+                }
+                &.w80{
+                  width: 80%;
+                }
+                &.des{
+                  >div{
+                    &.text-box{
+                      >.text{
+                        height: 198px;
+                      }
+                      >.words{
+                        top: auto;
+                        bottom: 8px;
+                      }
+                    }
+                  }
+                }
+                &.topic{
+                  .btn{
+                    display: inline-block;
+                    text-align: center;
+                    font-size: 0.7em;
+                    color: #282828;
+                    height: 24px;
+                    line-height: 24px;
+                    padding-left: 10px;
+                    cursor: pointer;
+                    &.selector{
+                      padding-right: 32px;
+                      background-image: url(../img/icon_selector.png);
+                      background-position: right center;
+                      background-repeat: no-repeat;
+                      border: 1px solid @Theme-color;
+                    }
+                  }
+                }
+                &.release{
+                  .nxl-check-box{
+                    width: 110px;
+                  }
+                }
+                >div{
+                  vertical-align: middle;
+                  &.text-box{
+                    position: relative;
+                    width: 100%;
+                    >.text{
+                      width: 100%;
+                      height: 54px;
+                      color: #cdd0d9;
+                      font-size: 0.8em;
+                      border: 1px solid #cdd0d9;
+                      padding: 18px 15px;
+                      font-family: inherit;
+                    }
+                    >.words{
+                      position: absolute;
+                      display: inline-block;
+                      height: 28px;
+                      top: 0;
+                      bottom: 0;
+                      right: 20px;
+                      margin: auto;
+                      font-size: 1em;
+                      color: #cdd0d9;
+                    }
+                  }
+                }
+              }
+              &.h70{
+                height: 70px;
+              }
+              &.h210{
+                height: 210px;
+              }
+            }
+          }
+        }
+        >.btn-normal-lg{
+          background-color: @Theme-color;
+          width: auto;
+          height: 50px;
+          padding: 0 80px;
+        }
+      }
+    }
+  }
+  &.show{
+    opacity: 1;
+    >.content{
+      .transform(translate(0, 0));
+    }
+  }
+}

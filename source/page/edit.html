@@ -1,0 +1,264 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+        <title>编辑 - 暖心理</title>
+        <link rel="stylesheet" type="text/css" href="../lib/unslider/css/unslider.css" />
+        <link rel="stylesheet" type="text/css" href="../../dist/css/nuanxinli.min.css" />
+    </head>
+    <body>
+        <!--头部-->
+        <div class="header">
+            <div class="container">
+                <!--logo-->
+                <a class="logo" href="#">
+                    <img src="../img/logo.png" />
+                </a>
+                <!--搜索-->
+                <div class="search">
+                    <input type="text" placeholder="搜索" />
+                </div>
+                <!--登录-->
+                <div class="login">
+                    <div style="background-image: url(../img/user/portait.jpg);" class="portrait"></div>
+                    <div class="name">123ABC中国</div>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="container">
+                <ul>
+                    <li class="first">
+                        <a href="index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="counselor.html">咨询</a>
+                    </li>
+                    <li>
+                        <a href="magazine.html">杂志</a>
+                    </li>
+                    <li>
+                        <a href="quanquan.html">圈圈</a>
+                    </li>
+                    <li>
+                        <a href="activity.html">活动</a>
+                    </li>
+                    <li>
+                        <a href="#">关于我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container clear-fix">
+                <div class="left">
+                    <!--资料区域-->
+                    <div class="nxl-fragment-user-edit">
+                        <!--资料完整度-->
+                        <div class="progress">
+                            <div class="wrap">
+                                <!--标题-->
+                                <div class="title">资料完善度</div>
+                                <!--进度条-->
+                                <div class="bar">
+                                    <div class="outer">
+                                        <div style="width: 37%;" class="inner">
+                                            <div class="snail">
+                                                <img src="../img/user_info_progress_snail.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--进度数字-->
+                                <div class="num">37%</div>
+                            </div>
+                        </div>
+                        <!--资料区域-->
+                        <div class="info">
+                            <p class="ret">返回个人主页</p>
+                            <div class="content">
+                                <table>
+                                    <tbody>
+                                        <!--标题-->
+                                        <tr class="disabled-border">
+                                            <td colspan="3">资料编辑</td>
+                                        </tr>
+                                        <!--头像-->
+                                        <tr class="h140">
+                                            <td class="w20">头像</td>
+                                            <td class="w80 portrait">
+                                                <img id="portrait_show" src="../img/user/portait.jpg" />
+                                                <input style="display: none" type="file" id="portrait_src" />
+                                                <button onclick="javascript: selectPortrait();">选择头像</button>
+                                            </td>
+                                        </tr>
+                                        <!--性别-->
+                                        <tr>
+                                            <td class="w20"><span class="warning">*</span>性别</td>
+                                            <td class="w80 sex">
+                                                <!--选择框-->
+                                                <div class="nxl-check-box single">
+                                                    <div class="status on"></div>
+                                                    男
+                                                </div>
+                                                <!--选择框-->
+                                                <div class="nxl-check-box single">
+                                                    <div class="status"></div>
+                                                    女
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!--年龄-->
+                                        <tr>
+                                            <td class="w20"><span class="warning">*</span>年龄段</td>
+                                            <td class="w80 age">
+                                                <span class="btn selector nxl-position-r">
+                                                    90后
+                                                    <!--选择器组件，data-api用来指明请求路径-->
+                                                    <table style="display: none;" data-api="" cellpadding="0" cellspacing="0" border="0" class="nxl-lib-tips">
+                                                        <tbody>
+                                                        <tr>
+                                                            <!--data-params用来携带请求参数-->
+                                                            <td data-params="sh">90后</td>
+                                                            <td data-params="gz">80后</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td data-params="cq">70后</td>
+                                                            <td data-params="nj">60后</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <!--人物模型-->
+                                        <tr>
+                                            <td class="w20"><span class="warning">*</span>人物模型</td>
+                                            <td class="w80 model">
+                                                <span class="btn selector nxl-position-r">
+                                                    心理学爱好者
+                                                    <!--选择器组件，data-api用来指明请求路径-->
+                                                    <table style="display: none;" data-api="" cellpadding="0" cellspacing="0" border="0" class="nxl-lib-tips">
+                                                        <tbody>
+                                                        <tr>
+                                                            <!--data-params用来携带请求参数-->
+                                                            <td data-params="sh">心理学爱好者1</td>
+                                                            <td data-params="gz">心理学爱好者2</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td data-params="cq">心理学爱好者3</td>
+                                                            <td data-params="nj">心理学爱好者4</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <!--简介-->
+                                        <tr class="h200">
+                                            <td class="w20">简介</td>
+                                            <td class="w80 des">
+                                                <textarea class="text"></textarea>
+                                            </td>
+                                        </tr>
+                                        <!--手机号-->
+                                        <tr>
+                                            <td class="w20">手机号</td>
+                                            <td class="w80 phone">
+                                                <input type="text" class="text" />
+                                            </td>
+                                        </tr>
+                                        <!--邮箱-->
+                                        <tr>
+                                            <td class="w20">邮箱</td>
+                                            <td class="w80 email">
+                                                <input type="text" class="text" />
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="opt">
+                                <button>保存资料</button>
+                                <a href="#">取消修改</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <!--关注/粉丝-->
+                    <div class="user-social">
+                        <div class="wrap">
+                            <div>
+                                <p class="title">关注</p>
+                                <p class="content">12人</p>
+                            </div>
+                            <div class="b">
+                                <p class="title">粉丝</p>
+                                <p class="content">123人</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--空白-->
+                    <div class="nxl-margin-top-20"></div>
+                    <!--收藏-->
+                    <div class="magazine">
+                        <div class="nxl-box">
+                            <div class="title">
+                                我的收藏
+                            </div>
+                            <div class="body">
+                                <div class="nxl-fragment-magazine">
+                                    <div class="magazines event-auto-click">
+                                        <div class="content clear-fix">
+                                            <img src="../img/magazine/magazine_1.jpg" />
+                                            <div class="text">
+                                                <p class="title"><a class="event-auto-click-target" target="_blank" href="#">爱情首先是给予，而不是 获得而不是获得</a></p>
+                                                <p class="type">箴言</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="magazines event-auto-click">
+                                        <div class="content clear-fix">
+                                            <img src="../img/magazine/magazine_1.jpg" />
+                                            <div class="text">
+                                                <p class="title"><a class="event-auto-click-target" target="_blank" href="#">爱情首先是给予，而不是 获得而不是获得</a></p>
+                                                <p class="type">箴言</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="magazines event-auto-click">
+                                        <div class="content clear-fix">
+                                            <img src="../img/magazine/magazine_1.jpg" />
+                                            <div class="text">
+                                                <p class="title"><a class="event-auto-click-target" target="_blank" href="#">爱情首先是给予，而不是 获得而不是获得</a></p>
+                                                <p class="type">箴言</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nxl-more-simple">
+                                    <a href="#">更多收藏>></a>
+                                    <p>·小暖·每日都有更新哦~</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            Copyright © 2008-2014 中迪心理 All Rights Reserved 京ICP备13043456号 京公网安备11010802015164
+        </div>
+    </body>
+    <script src="../lib/jquery/jquery-2.1.4.min.js"></script>
+    <script src="../lib/laydate/laydate.js"></script>
+    <script src="../lib/unslider/js/unslider-min.js"></script>
+    <script src="../../dist/js/nuanxinli.min.js"></script>
+    <script>
+        viewLocalImg("portrait_src","portrait_show")();
+        function selectPortrait(){
+            $("#portrait_src").click();
+        }
+    </script>
+</html>
